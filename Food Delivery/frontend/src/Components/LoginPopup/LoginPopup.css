@@ -1,0 +1,117 @@
+/* Modern Elegant CSS for Login Popup */
+
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: grid;
+    place-items: center;
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .login-popup-container {
+    width: max(23vw, 350px);
+    color: #555; /* Slightly darker text for contrast */
+    background-color: #f9f9f9; /* Light grey background for a modern look */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 40px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more pronounced effect */
+    animation: scaleUp 0.4s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-size: 20px; /* Slightly larger title font size */
+    font-weight: bold; /* Bold title */
+  }
+  
+  .login-popup-title img {
+    width: 18px; /* Slightly larger close icon */
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .login-popup-title img:hover {
+    transform: rotate(90deg); /* Rotate on hover for a modern effect */
+  }
+  
+  .login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-popup-inputs input {
+    outline: none;
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 12px 16px;
+    border-radius: 6px; /* Slightly more rounded input fields */
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-popup-inputs input:focus {
+    border-color: #00aaff; /* Border color on focus */
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.3); /* Soft shadow on focus */
+  }
+  
+  .login-popup-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    background-color: tomato; /* Vibrant button color */
+    font-size: 16px; /* Slightly larger button text */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-popup-container button:hover {
+    background-color: tomato; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 123, 191, 0.3); /* Soft shadow on hover */
+  }
+  
+  .login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 10px; /* Increased gap for better spacing */
+    margin-top: -10px;
+    font-size: 12px; /* Smaller font for the condition text */
+  }
+  
+  .login-popup-condition input {
+    margin-top: 3px;
+  }
+  
+  .login-popup p span {
+    color: #00aaff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .login-popup p span:hover {
+    color: #007bbf;
+  }
+  
